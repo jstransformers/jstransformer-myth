@@ -13,13 +13,19 @@ npm test
 > For more use-cases see the [tests](./test.js)
 
 ```js
-var myth = require('jstransformer-myth');
+var myth = require('jstransformer')(require('jstransformer-myth'));
+var opts = {};
 
-myth.render('body {\n  color: var(--purple);\n}', opts);
-myth.renderFile('path/to/file.myth', opts);
+myth.render('pre {\n  margin: calc(50px * 2);\n}', opts);
+//=> 'pre {\n  margin: 100px;\n}'
+
+
+var promise = myth.renderFileAsync('./path/to/hello.myth', opts);
+promise.then(function(data) {
+  console.log(data);
+  //=> 'pre {\n  margin: 100px;\n}'
+});
 ```
-> **notice** that opts refers to the `myth` function, sooo....
-
 
 **future.css**
 
