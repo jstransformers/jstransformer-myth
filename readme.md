@@ -1,6 +1,6 @@
 ## [![npm][npmjs-img]][npmjs-url] [![mit license][license-img]][license-url] [![build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![deps status][daviddm-img]][daviddm-url]
 
-> Transform CSS to JSON AST using `myth.parse()`.
+> Myth support for JS Transformers
 
 ## Install
 ```
