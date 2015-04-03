@@ -18,6 +18,10 @@ var myth = require('jstransformer-myth');
 myth.render('body {\n  color: var(--purple);\n}', opts);
 myth.renderFile('path/to/file.myth', opts);
 ```
+> **notice** that opts refers to the `myth` function, sooo....
+
+
+**future.css**
 
 ```css
 :root {
@@ -54,9 +58,10 @@ a {
 
 
 ## Related
-- [rework](https://github.com/reworkcss/rework): Plugin framework for CSS preprocessing
 - [myth](https://github.com/segmentio/myth): A CSS preprocessor that acts like a polyfill for future versions of the spec.
-- [cssom](https://github.com/NV/CSSOM): CSS Object Model implementation and CSS parser
+- [rework](https://github.com/reworkcss/rework): Plugin framework for CSS preprocessing
+- [styl](https://github.com/tj/styl): CSS pre-processor built on Rework
+- [stylus](https://github.com/LearnBoost/stylus): Robust, expressive, and feature-rich CSS superset
 
 
 ## Author
