@@ -12,7 +12,7 @@ var test = require('testit');
 var assert = require('assert');
 var transform = require('../index');
 
-test('should transform legacy css to css', function(done) {
+test('should transform legacy css to css (.render)', function(done) {
   var actual = transform.render('body {\n  font-size: 12px;\n}');
   var expected = 'body {\n  font-size: 12px;\n}';
 
@@ -20,7 +20,7 @@ test('should transform legacy css to css', function(done) {
   done();
 });
 
-test('should support variables', function(done) {
+test('should support variables (.render)', function(done) {
   var actual = transform.render(':root {\n  --purple: #e3fd5a;\n}\nbody {\n  color: var(--purple);\n}');
   var expected = 'body {\n  color: #e3fd5a;\n}';
 
@@ -28,7 +28,7 @@ test('should support variables', function(done) {
   done();
 });
 
-test('should support calc', function(done) {
+test('should support calc (.render)', function(done) {
   var actual = transform.render('pre {\n  margin: calc(50px * 2);\n}');
   var expected = 'pre {\n  margin: 100px;\n}';
 
@@ -36,10 +36,20 @@ test('should support calc', function(done) {
   done();
 });
 
-test('should have .renderFile method', function(done) {
+test('should render from a given filepath, synchronously', function(done) {
   var actual = transform.renderFile('./test/fixtures/myth.in.css');
   var expected = fs.readFileSync('./test/fixtures/myth.out.css', 'utf8');
 
   assert.strictEqual(actual, expected);
   done();
+});
+
+test('should render myth file asynchronously (promise)', function(done) {
+  var promise = transform.renderFileAsync('./test/fixtures/myth.in.css');
+  var expected = fs.readFileSync('./test/fixtures/myth.out.css', 'utf8');
+
+  promise.then(function(actual) {
+    assert.strictEqual(actual, expected);
+    done();
+  });
 });
