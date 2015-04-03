@@ -10,7 +10,7 @@
 var fs = require('fs');
 var test = require('testit');
 var assert = require('assert');
-var transform = require('./index');
+var transform = require('../index');
 
 test('should transform legacy css to css', function(done) {
   var actual = transform.render('body {\n  font-size: 12px;\n}');
@@ -37,8 +37,8 @@ test('should support calc', function(done) {
 });
 
 test('should have .renderFile method', function(done) {
-  var actual = transform.renderFile('./fixtures/myth.in.css');
-  var expected = fs.readFileSync('./fixtures/myth.out.css', 'utf8');
+  var actual = transform.renderFile('./test/fixtures/myth.in.css');
+  var expected = fs.readFileSync('./test/fixtures/myth.out.css', 'utf8');
 
   assert.strictEqual(actual, expected);
   done();
