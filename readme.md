@@ -52,7 +52,7 @@ will be transformed to
 }
 
 a {
-  color: var(--purple);
+  color: #a6c776;
 }
 ```
 
