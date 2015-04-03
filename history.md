@@ -1,5 +1,11 @@
 
 
+## v0.2.0 / April 3, 2015
+- update readme usage
+- add test for `.renderFileAsync` method
+- move tests to `test` dir
+- add `.renderFileAsync` method
+
 ## v0.1.1 / April 3, 2015
 - npm@v0.1.1
 - fix example in readme
