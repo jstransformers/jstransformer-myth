@@ -18,7 +18,19 @@
     "url": "git://github.com/jstransformers/jstransformer-myth.git"
   },
   "keywords": [
-    "jstransformer"
+    "css",
+    "future",
+    "jstransformer",
+    "myth",
+    "plugin",
+    "plugins",
+    "preprocessor",
+    "rework",
+    "rework-plugin",
+    "spec",
+    "styl",
+    "style",
+    "transform"
   ],
   "license": {
     "type": "MIT",
