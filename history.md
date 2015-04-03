@@ -1,5 +1,9 @@
 
 
+## v0.1.1 / April 3, 2015
+- npm@v0.1.1
+- fix example in readme
+
 ## v0.1.0 / April 3, 2015
 - npm@v0.1.0
 - update description

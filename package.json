@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-myth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Myth support for JS Transformers",
   "scripts": {
     "lint": "jshint index.js && jscs index.js --reporter inline",
