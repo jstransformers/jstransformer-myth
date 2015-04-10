@@ -1,5 +1,12 @@
 
 
+## v0.4.0 / April 10, 2015
+- run update, close #1
+
+## v0.3.0 / April 5, 2015
+- move to `assertit`
+- update readme
+
 ## v0.2.0 / April 3, 2015
 - update readme usage
 - add test for `.renderFileAsync` method

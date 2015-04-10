@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-myth",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Myth support for JS Transformers",
   "scripts": {
     "lint": "jshint index.js && jscs index.js --reporter inline",
@@ -42,6 +42,6 @@
   "devDependencies": {
     "assertit": "^0.1.0",
     "istanbul-harmony": "~0.3.1",
-    "jstransformer": "0.0.1"
+    "jstransformer": "~0.0.0"
   }
 }
