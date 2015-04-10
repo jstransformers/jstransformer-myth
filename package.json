@@ -34,14 +34,14 @@
   ],
   "license": {
     "type": "MIT",
-    "url": "https://github.com/jstransformers/jstransformer-myth/blob/master/license.md"
+    "url": "https://github.com/jstransformers/jstransformer-myth/blob/master/LICENSE.md"
   },
   "dependencies": {
-    "bluebird": "~2.9.24",
     "myth": "~1.4.0"
   },
   "devDependencies": {
     "assertit": "^0.1.0",
-    "istanbul-harmony": "~0.3.1"
+    "istanbul-harmony": "~0.3.1",
+    "jstransformer": "0.0.1"
   }
 }
