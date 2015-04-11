@@ -1,5 +1,9 @@
 
 
+## v0.4.2 / April 11, 2015
+- update usage examples
+- merge #2
+
 ## v0.4.1 / April 10, 2015
 - add `inputFormats`
 
