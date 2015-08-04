@@ -1,47 +1,30 @@
 {
   "name": "jstransformer-myth",
-  "version": "0.4.2",
-  "description": "Myth support for JS Transformers",
-  "scripts": {
-    "lint": "jshint index.js && jscs index.js --reporter inline",
-    "test": "node test",
-    "test-cov": "istanbul cover test",
-    "test-travis": "istanbul cover test --report lcovonly"
+  "version": "1.0.0",
+  "description": "Myth support for JSTransformers.",
+  "dependencies": {
+    "myth": "~1.5.0"
   },
-  "author": {
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "https://github.com/tunnckoCore"
+  "keywords": [
+    "jstransformer"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "test-jstransformer": "^1.0.0"
+  },
+  "scripts": {
+    "test": "test-jstransformer",
+    "coverage": "test-jstransformer coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jstransformers/jstransformer-myth.git"
+    "url": "https://github.com/jstransformers/jstransformer-myth.git"
   },
-  "keywords": [
-    "css",
-    "future",
-    "jstransformer",
-    "myth",
-    "plugin",
-    "plugins",
-    "preprocessor",
-    "rework",
-    "rework-plugin",
-    "spec",
-    "styl",
-    "style",
-    "transform"
-  ],
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jstransformers/jstransformer-myth/blob/master/LICENSE.md"
+  "author": {
+    "name": "JSTransformers Team",
+    "url": "http://github.com/orgs/jstransformers/people"
   },
-  "dependencies": {
-    "myth": "~1.4.0"
-  },
-  "devDependencies": {
-    "assertit": "^0.1.0",
-    "istanbul-harmony": "~0.3.1",
-    "jstransformer": "~0.0.0"
-  }
+  "license": "MIT"
 }
