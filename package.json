@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Myth support for JSTransformers.",
   "dependencies": {
-    "myth": "~1.5.0"
+    "myth": "^1.5.0"
   },
   "keywords": [
     "jstransformer"
