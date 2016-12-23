@@ -1,11 +1,11 @@
-'use strict';
+'use strict'
 
-var myth = require('myth');
+var myth = require('myth')
+var extend = require('extend-shallow')
 
-exports.name = 'myth';
-exports.inputFormats = ['css', 'myth'];
-exports.outputFormat = 'css';
+exports.name = 'myth'
+exports.outputFormat = 'css'
 
-exports.render = function _render(str, options) {
-  return myth(str, options);
-};
+exports.render = function (str, options, locals) {
+  return myth(str, extend({}, options, locals))
+}

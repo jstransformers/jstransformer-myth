@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.0: 2016-12-23
+
+- Updated Boilerplate
+- Added `locals` support
+
 ## v1.0.0: 2015-08-04
 
 - Updated Boilerplate
