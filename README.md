@@ -1,5 +1,7 @@
 # jstransformer-myth
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-myth.svg)](https://greenkeeper.io/)
+
 [Myth](http://npm.im/myth) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-myth/master.svg)](https://travis-ci.org/jstransformers/jstransformer-myth)
