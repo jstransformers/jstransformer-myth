@@ -15,7 +15,7 @@
 ## API
 
 ```js
-var myth = require('jstransformer')(require('jstransformer-myth'));
+var myth = require('jstransformer')(require('jstransformer-myth'))
 var opts = {};
 
 myth.render('pre {\n  margin: calc(50px * 2);\n}', opts).body;
